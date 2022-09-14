@@ -26,7 +26,7 @@ public class BasketService {
     }
 
     public void add(List<Integer> id) {
-         basket.addItems(id.stream().map(items::get).filter(Objects::nonNull).collect(Collectors.toList()));
+        basket.addItems(id.stream().map(items::get).filter(Objects::nonNull).collect(Collectors.toList()));
     }
 
     public List<Item> get() {
