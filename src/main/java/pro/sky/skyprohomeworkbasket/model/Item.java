@@ -4,7 +4,6 @@ public class Item {
     private final int ID;
     private final String ITEM;
     private final int PRICE;
-
     public Item(int id, String item, int price) {
         ID = id;
         ITEM = item;

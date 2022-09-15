@@ -1,4 +1,4 @@
-package pro.sky.skyprohomeworkbasket.basketService;
+package pro.sky.skyprohomeworkbasket.service.basket;
 
 import org.springframework.stereotype.Service;
 import pro.sky.skyprohomeworkbasket.component.Basket;
@@ -26,7 +26,7 @@ public class BasketService {
     }
 
     public void add(List<Integer> id) {
-         basket.addItems(id.stream().map(items::get).filter(Objects::nonNull).collect(Collectors.toList()));
+        basket.addItems(id.stream().map(items::get).filter(Objects::nonNull).collect(Collectors.toList()));
     }
 
     public List<Item> get() {

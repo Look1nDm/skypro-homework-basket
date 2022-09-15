@@ -1,10 +1,10 @@
-package pro.sky.skyprohomeworkbasket.basketController;
+package pro.sky.skyprohomeworkbasket.controller.basket;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pro.sky.skyprohomeworkbasket.basketService.BasketService;
+import pro.sky.skyprohomeworkbasket.service.basket.BasketService;
 import pro.sky.skyprohomeworkbasket.model.Item;
 
 import java.util.List;
@@ -13,7 +13,6 @@ import java.util.List;
 @RequestMapping(path = "/order")
 public class BasketController {
     private final BasketService basketService;
-
     public BasketController(BasketService basketService) {
         this.basketService = basketService;
     }
